@@ -182,6 +182,9 @@
     <PreBuildEvent>
       <Command>copy ..\platform.hpp ..\..\..\src</Command>
     </PreBuildEvent>
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|Win32'">
     <PreBuildEvent>
